@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>PAGE DO MAX</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,21 +50,35 @@ id: 5566,
 fullName : function() {
   return this.firstName + " " + this.lastName;
 }
+
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>fullName</b> is a method of the person object.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+>>>>>>> 0ed7570d4dcab0d967b0b17064cfc2edf2158ab1
 };
 
 // Display data from the object:
 document.getElementById("demo").innerHTML = person.fullName();
 </script>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-  $a = $_POST['nome'];
-  $b = $_POST['senha'];
-  if(empty($a)){
-    echo "vazio";
-  }else{
-    echo "$a <br>  $b";
-  }
-}
-?>
+
 </body>
 </html>
+=======
+
+</body>
+</html>
+>>>>>>> 0ed7570d4dcab0d967b0b17064cfc2edf2158ab1
